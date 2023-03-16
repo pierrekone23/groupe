@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="IMAGES/IMG-20230203-WA0021.jpg">
+</head>
+<body>
+  <nav style="background-color: rgb(0, 0, 120);" class="navbar fixed-top">
+    <a  class="navbar-brand" href="#" > <img width="80px" src="IMAGES/IMG-20230203-WA0021.jpg" alt=""></a>
+    <a class="navbar-brand" href="#" > <h2 style="text-transform: uppercase;font-family: serif; color: white;left: 50px;">80% Pratique - 20% Théorie</h2>
+    <H6 style="color: rgb(0, 119, 238);text-align: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">"L'INNOVATION FAIT TOUTE LA DIFFERENCE"</H6> </a>
+    <button style="z-index: 6; background-color: coral;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span style="background-color: transparent; border-radius: 3px;" class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div style="background-color: whitesmoke;" class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="exemple.html">ACCEUIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Inscription.html">INSCRIPTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Inscription.html">Nos Formation</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Gallery.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              GALLERY
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><a class="dropdown-item" href="Gallery.html">Images</a></li>
+              <li><a class="dropdown-item" href="Gallery.html">Vidéos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div></div>
+</div>
+
+<br><br>
+
+<form style="background-color: rgb(218, 218, 243); width: auto;height: auto;text-align: center;padding: 10px;margin: 200px;border: 10px coral ; " id="myForm">
+  <div>
+    <h2 style="text-decoration: underline;">FORMULAIRE D'INSCRIPTION</h2>
+  </div><br><br>
+  <span class="form_col">Sexe :</span>
+  <label><input name="sex" type="radio" value="H" />Homme</label>
+  <label><input name="sex" type="radio" value="F" />Femme</label>
+  <span class="tooltip">Vous devez sélectionnez votre sexe</span>
+  <br />
+
+  <label class="form_col" for="lastName">Nom :</label>
+  <input name="lastName" id="lastName" type="text" />
+  <span class="tooltip">Un nom ne peut pas faire moins de 2 caractères</span>
+  <br />
+
+  <label class="form_col" for="firstName">Prénom :</label>
+  <input name="firstName" id="firstName" type="text" />
+  
+  <span class="tooltip">Un prénom ne peut pas faire moins de 2 caractères</span>
+  <br />
+  
+  <label class="form_col" for="age">Âge :</label>
+  <input name="age" id="age" type="text" />
+  <span class="tooltip">L'âge doit être compris entre 5 et 140</span>
+  <br />
+  
+  <label class="form_col" for="login">Pseudo :</label>
+  <input name="login" id="login" type="text" />
+  <br />
+
+  <label class="form_col" for="pwd2">Mot de passe (confirmation) :</label>
+  <span class="tooltip">Le pseudo ne peut pas faire moins de 4 caractères</span>
+  <br />
+  
+  <label class="form_col" for="country">Pays :</label>
+  
+  <select name="country" id="country">
+  <option value="none">Sélectionnez votre pays de résidence</option>
+  <option value="en">Mali</option>
+  <option value="en">Burkina-Faso</option>
+  <option value="en">Sénégal</option>
+  <option value="us">États-Unis</option>
+  <option value="fr">France</option>
+  </select>
+  <span class="tooltip">Vous devez sélectionner votre pays de résidence</span>
+  
+  <br />
+  
+  <span class="form_col"></span>
+  <label><input name="news" type="checkbox" /> Je désire recevoir la newsletter chaque mois.</label>
+          <br />
+  
+  <span class="form_col"></span>
+  <input type="submit" value= "M'inscrire" /> <input type="reset" value="Réinitialiser le formulaire" />
+  
+</form>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<footer style="background-color: beige;" class="my-5 pt-5 text-muted text-center text-small">
+  <div style="text-align: center;display: block;">
+    <h3> Nous joindre</h3>
+    <a class="icon" href="https://www.facebook.com/ispatec.bamako/"><img width="30" src="ICONES/logo-facebook.svg" alt=""></a>
+    <a class="icon" href="https://www.instagram.com/reel/CpLwuj5Kimn/?igshid=NDk5N2NlZjQ="><img width="30" src="ICONES/logo-instagram.svg" alt=""></a>
+    <a class="icon" href="https://vm.tiktok.com/ZMYfYYMMV/"><img width="30" src="ICONES/logo-tiktok.svg" alt=""></a>
+    <a class="icon" href=""><img width="30" src="ICONES/logo-whatsapp.svg" alt=""></a>
+  </div>
+  <p class="mb-1">&copy; 2023-2024 ISPATEC - Tous Droit Réserver</p>
+  <ul class="list-inline">
+    <li class="list-inline-item"><a href="Inscription.html">EN HAUT</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
